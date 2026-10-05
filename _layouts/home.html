@@ -21,7 +21,7 @@ layout: default
           {%- if post.summary -%}
             {{ post.summary | escape }}
           {%- else -%}
-            {{ post.content | strip_html | strip_newlines | replace: "Coaches Corner — Last Week's Observations", "" | replace: "Games", "" | truncatewords: 30 }}
+            {{ post.content | strip_html | strip_newlines | truncatewords: 30 }}
           {%- endif -%}
         </p>
         <span class="card-link">Read issue →</span>
