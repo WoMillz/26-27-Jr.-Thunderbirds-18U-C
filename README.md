@@ -16,7 +16,7 @@ Weekly coaching notes and observations for the 2026–27 season, plus links to t
 
 ## About
 
-This site is the public side of an 18U C youth hockey coaching journal — what we saw in games and practices, what we're working on, and where to find the drills and frameworks behind it. Full practice plans live on [Ice Hockey Systems](https://www.icehockeysystems.com/); this page links out to the specific plans and articles used each week rather than duplicating them.
+This site is the public side of 18U C Millwater youth hockey coaching journal — what we saw in games and practices, what we're working on, and where to find the drills and frameworks behind it. Full practice plans live on [Ice Hockey Systems](https://www.icehockeysystems.com/); this page links out to the specific plans and articles used each week rather than duplicating them.
 
 ## Structure
 
