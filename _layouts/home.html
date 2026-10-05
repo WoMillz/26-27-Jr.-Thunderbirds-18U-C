@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="home">
+  {%- if page.title -%}<h1 class="page-heading">{{ page.title }}</h1>{%- endif -%}
+  {{ content }}
+
+  <div class="card-grid">
+    {%- for post in site.posts -%}
+    <a class="card" href="{{ post.url | relative_url }}">
+      {%- if post.image -%}
+      <div class="card-image" style="background-image: url('{{ post.image | relative_url }}');"></div>
+      {%- endif -%}
+      <div class="card-body">
+        <div class="card-meta">
+          {%- if post.week -%}Week {{ post.week }} · {% endif -%}
+          {{ post.date | date: "%b %-d, %Y" }}
+        </div>
+        <h2 class="card-title">{{ post.title | escape }}</h2>
+        <p class="card-summary">
+          {%- if post.summary -%}
+            {{ post.summary | escape }}
+          {%- else -%}
+            {{ post.content | strip_html | strip_newlines | replace: "Coaches Corner — Last Week's Observations", "" | replace: "Games", "" | truncatewords: 30 }}
+          {%- endif -%}
+        </p>
+        <span class="card-link">Read issue →</span>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+</div>
