@@ -5,6 +5,7 @@ baseurl: "/26-27-Jr.-Thunderbirds-18U-C"
 url: "https://womillz.github.io"
 plugins:
   - jekyll-feed
+  - jekyll-gfm-admonitions
 permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
